@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMundo · Nosotros</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #F4F8F0; color: #2C3E28; }
+
+    /* NAVEGACIÓN */
+    nav { background: #1E5631; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    nav .brand { color: #fff; font-size: 1.25rem; font-weight: 700; text-decoration: none; }
+    nav .brand span { color: #8DD670; }
+    nav ul { list-style: none; display: flex; gap: 8px; }
+    nav ul li a { color: rgba(255,255,255,0.8); text-decoration: none; padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; }
+    nav ul li a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    nav ul li a.active { background: rgba(255,255,255,0.18); color: #fff; font-weight: 600; border-bottom: 2px solid #8DD670; border-radius: 6px 6px 0 0; }
+
+    /* ENCABEZADO DE PÁGINA */
+    .page-header { background: #2E7D32; color: #fff; padding: 56px 40px; }
+    .page-header .eyebrow { font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; color: #8DD670; margin-bottom: 12px; }
+    .page-header h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.2; max-width: 520px; }
+    .page-header p { margin-top: 16px; opacity: 0.85; max-width: 480px; line-height: 1.7; }
+
+    /* SECCIÓN PRINCIPAL */
+    .section { padding: 64px 40px; max-width: 960px; margin: 0 auto; }
+
+    /* MISIÓN */
+    .mission-block { background: #fff; border-radius: 16px; padding: 40px; box-shadow: 0 2px 16px rgba(30,86,49,0.07); display: grid; grid-template-columns: 120px 1fr; gap: 36px; align-items: center; margin-bottom: 52px; }
+    .mission-icon { font-size: 4.5rem; text-align: center; }
+    .mission-block h2 { font-size: 1.5rem; color: #1E5631; margin-bottom: 12px; }
+    .mission-block p { color: #5A7A52; line-height: 1.7; }
+    .mission-block p + p { margin-top: 12px; }
+
+    /* VALORES */
+    .values-title { font-size: 1.6rem; color: #1E5631; margin-bottom: 28px; }
+    .values-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .value-item { border-left: 4px solid #4CAF50; padding: 20px 24px; background: #fff; border-radius: 0 12px 12px 0; box-shadow: 0 1px 8px rgba(30,86,49,0.06); }
+    .value-item h3 { font-size: 1rem; color: #1E5631; margin-bottom: 8px; }
+    .value-item p { color: #5A7A52; font-size: 0.9rem; line-height: 1.6; }
+
+    /* CITA */
+    .quote-block { background: #1E5631; border-radius: 16px; padding: 48px 56px; text-align: center; margin: 52px 0 0; }
+    .quote-block blockquote { font-size: 1.35rem; color: #fff; font-style: italic; line-height: 1.7; margin-bottom: 16px; }
+    .quote-block cite { color: #8DD670; font-style: normal; font-size: 0.85rem; letter-spacing: 0.5px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="brand" href="index.html">🌿 Eco<span>Mundo</span></a>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about.html" class="active">Nosotros</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="eyebrow">Quiénes somos</div>
+    <h1>Una comunidad comprometida con el planeta</h1>
+    <p>Nacimos de la convicción de que la educación ambiental es el primer paso hacia un cambio real y duradero.</p>
+  </div>
+
+  <div class="section">
+
+    <div class="mission-block">
+      <div class="mission-icon">🌍</div>
+      <div>
+        <h2>Nuestra misión</h2>
+        <p>EcoMundo nació en 2019 con una idea simple: que cada persona, con la información correcta, puede convertirse en un agente de cambio. No somos una ONG ni un partido político: somos una comunidad de personas que creen que el cuidado ambiental es responsabilidad de todos.</p>
+        <p>Trabajamos para acercar la ciencia climática al ciudadano de a pie, desmitificar el ecologismo y ofrecer herramientas concretas para vivir de forma más sostenible.</p>
+      </div>
+    </div>
+
+    <h2 class="values-title">Nuestros valores</h2>
+    <div class="values-grid">
+      <div class="value-item">
+        <h3>🔬 Ciencia primero</h3>
+        <p>Todo lo que compartimos tiene respaldo científico. No publicamos alarmismo ni negacionismo: solo datos verificables y contextualizados.</p>
+      </div>
+      <div class="value-item">
+        <h3>🤝 Acción colectiva</h3>
+        <p>Creemos que los cambios sistémicos requieren comunidad. Por eso promovemos redes locales y proyectos colaborativos.</p>
+      </div>
+      <div class="value-item">
+        <h3>🌱 Cambio gradual</h3>
+        <p>No pedimos perfección. Un paso pequeño repetido por millones de personas genera un impacto mayor que la perfección individual.</p>
+      </div>
+      <div class="value-item">
+        <h3>🔑 Acceso abierto</h3>
+        <p>El conocimiento ambiental debe ser libre. Todos nuestros recursos son gratuitos y están disponibles en español.</p>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      <blockquote>"El medioambiente es donde todos nos reunimos; es lo único que todos compartimos."</blockquote>
+      <cite>— Lady Bird Johnson</cite>
+    </div>
+
+  </div>
+
+</body>
+</html>

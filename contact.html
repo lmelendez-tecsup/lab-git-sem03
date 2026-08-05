@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMundo · Contacto</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #F4F8F0; color: #2C3E28; }
+
+    /* NAVEGACIÓN */
+    nav { background: #1E5631; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    nav .brand { color: #fff; font-size: 1.25rem; font-weight: 700; text-decoration: none; }
+    nav .brand span { color: #8DD670; }
+    nav ul { list-style: none; display: flex; gap: 8px; }
+    nav ul li a { color: rgba(255,255,255,0.8); text-decoration: none; padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; }
+    nav ul li a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    nav ul li a.active { background: rgba(255,255,255,0.18); color: #fff; font-weight: 600; border-bottom: 2px solid #8DD670; border-radius: 6px 6px 0 0; }
+
+    /* ENCABEZADO DE PÁGINA */
+    .page-header { background: #2E7D32; color: #fff; padding: 56px 40px; }
+    .page-header .eyebrow { font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; color: #8DD670; margin-bottom: 12px; }
+    .page-header h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.2; max-width: 520px; }
+    .page-header p { margin-top: 16px; opacity: 0.85; max-width: 480px; line-height: 1.7; }
+
+    /* LAYOUT PRINCIPAL */
+    .main { max-width: 960px; margin: 0 auto; padding: 64px 40px; display: grid; grid-template-columns: 3fr 2fr; gap: 40px; align-items: start; }
+
+    /* FORMULARIO */
+    .form-card { background: #fff; border-radius: 16px; padding: 40px; box-shadow: 0 2px 16px rgba(30,86,49,0.07); }
+    .form-card h2 { font-size: 1.4rem; color: #1E5631; margin-bottom: 28px; }
+
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 0.8rem; font-weight: 700; color: #1E5631; margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%; padding: 12px 14px;
+      border: 1.5px solid #C8DFBE; border-radius: 8px;
+      font-family: inherit; font-size: 0.95rem; color: #2C3E28;
+      background: #F9FBF7; outline: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: #2E7D32; background: #fff; }
+    .form-group textarea { height: 128px; resize: vertical; }
+
+    .form-submit { background: #1E5631; color: #fff; border: none; padding: 14px 24px; border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; letter-spacing: 0.3px; }
+    .form-submit:hover { background: #2E7D32; }
+
+    /* BARRA LATERAL */
+    .sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .info-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 1px 8px rgba(30,86,49,0.06); }
+    .info-card h3 { font-size: 1rem; color: #1E5631; margin-bottom: 14px; }
+    .contact-item { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; color: #5A7A52; margin-bottom: 10px; }
+    .contact-item:last-child { margin-bottom: 0; }
+
+    .social-links { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+    .social-link { font-size: 0.9rem; color: #5A7A52; text-decoration: none; }
+    .social-link:hover { color: #1E5631; }
+
+    .pledge-card { background: #1E5631; border-radius: 12px; padding: 24px; }
+    .pledge-card h3 { color: #8DD670; font-size: 1rem; margin-bottom: 10px; }
+    .pledge-card p { color: rgba(255,255,255,0.85); font-size: 0.9rem; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="brand" href="index.html">🌿 Eco<span>Mundo</span></a>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about.html">Nosotros</a></li>
+      <li><a href="contact.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="eyebrow">Hablemos</div>
+    <h1>¿Tienes una idea para cuidar el planeta?</h1>
+    <p>Cuéntanos tu propuesta, duda o mensaje. Respondemos en menos de 48 horas.</p>
+  </div>
+
+  <div class="main">
+
+    <div class="form-card">
+      <h2>Envíanos un mensaje</h2>
+
+      <div class="form-group">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" placeholder="Tu nombre">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" placeholder="tu@correo.com">
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Tema</label>
+        <select id="topic">
+          <option value="">Selecciona un tema…</option>
+          <option value="voluntariado">Voluntariado ambiental</option>
+          <option value="proyecto">Propuesta de proyecto</option>
+          <option value="educacion">Educación y talleres</option>
+          <option value="prensa">Prensa y medios</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" placeholder="Cuéntanos tu idea o consulta…"></textarea>
+      </div>
+
+      <button class="form-submit">Enviar mensaje 🌱</button>
+    </div>
+
+    <div class="sidebar">
+      <div class="info-card">
+        <h3>Información de contacto</h3>
+        <div class="contact-item">📧 hola@ecomundo.org</div>
+        <div class="contact-item">📞 +1 (555) 234-5678</div>
+        <div class="contact-item">🕐 Lun–Vie, 9:00–18:00 (GMT-5)</div>
+      </div>
+
+      <div class="info-card">
+        <h3>Síguenos en redes</h3>
+        <div class="social-links">
+          <a class="social-link" href="#">🐦 Twitter / X — @EcoMundo</a>
+          <a class="social-link" href="#">📸 Instagram — @EcoMundoIG</a>
+          <a class="social-link" href="#">▶️ YouTube — EcoMundo</a>
+        </div>
+      </div>
+
+      <div class="pledge-card">
+        <h3>Compromiso verde 🌿</h3>
+        <p>Esta página está alojada en servidores con 100% energía renovable. Cada correo que envías también viaja con huella de carbono compensada.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
